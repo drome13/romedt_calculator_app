@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="romedt_calculator_app.MainPage">
+
+
+    <Grid Margin="10" BackgroundColor="Black">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <Label Grid.ColumnSpan="3" x:Name="labelResult" Text="0" FontSize="50" TextColor="white" HorizontalTextAlignment="End" VerticalTextAlignment="Center"></Label>
+        
+        <!--Row 1-->
+        <Button x:Name="btnClear" Grid.Row="1" Grid.Column="0" BackgroundColor="DarkGray" Text="AC" CornerRadius="60" HeightRequest="110" WidthRequest="110"></Button>
+        <Button x:Name="btnNegative" Grid.Row="1"  Grid.Column="1" BackgroundColor="DarkGray" Text="+/-" CornerRadius="60" HeightRequest="110" WidthRequest="110" ></Button>
+        <Button x:Name="btnPercent" Grid.Row="1" Grid.Column="2" BackgroundColor="DarkGray" Text="%" CornerRadius="60" HeightRequest="110" WidthRequest="110" ></Button>
+        <Button x:Name="btnDivide" Grid.Row="1" Grid.Column="3" Text="/" BackgroundColor="Orange" TextColor="White" CornerRadius="60" HeightRequest="110" WidthRequest="110" ></Button>
+        
+        <!--Row 2-->
+        <Button x:Name="btn7" Grid.Column="0" Grid.Row="2" Text="7" BackgroundColor="#303030" TextColor="white" CornerRadius="60" HeightRequest="110" WidthRequest="110"></Button>
+        <Button x:Name="btn8" Grid.Column="1" Grid.Row="2" Text="8" BackgroundColor="#303030" TextColor="white" CornerRadius="60" HeightRequest="110" WidthRequest="110" ></Button>
+        <Button x:Name="btn9" Grid.Column="2" Grid.Row="2" Text="9" BackgroundColor="#303030" TextColor="white" CornerRadius="60" HeightRequest="110" WidthRequest="110" ></Button>
+        <Button x:Name="btnMultiply" Grid.Column="3" Grid.Row="2" Text="X" BackgroundColor="Orange" TextColor="white" CornerRadius="60" HeightRequest="110" WidthRequest="110"></Button>
+
+        <!--Row 3-->
+        <Button x:Name="btn4" Grid.Column="0" Grid.Row="3" Text="4" BackgroundColor="#303030" TextColor="white" CornerRadius="60" HeightRequest="110" WidthRequest="110"></Button>
+        <Button x:Name="btn5" Grid.Column="1" Grid.Row="3" Text="5" BackgroundColor="#303030" TextColor="white" CornerRadius="60" HeightRequest="110" WidthRequest="110"></Button>
+        <Button x:Name="btn6" Grid.Column="2" Grid.Row="3" Text="6" BackgroundColor="#303030" TextColor="white" CornerRadius="60" HeightRequest="110" WidthRequest="110" ></Button>
+        <Button x:Name="btnSubtract" Grid.Column="3" Grid.Row="3" Text="-" BackgroundColor="orange" TextColor="white" CornerRadius="60" HeightRequest="110" WidthRequest="110" ></Button>
+
+        <!--Row 4-->
+        <Button x:Name="btn1" Grid.Column="0" Grid.Row="4" Text="1" BackgroundColor="#303030" TextColor="White" CornerRadius="60" HeightRequest="110" WidthRequest="110" ></Button>
+        <Button x:Name="btn2" Grid.Column="1" Grid.Row="4" Text="2" BackgroundColor="#303030" TextColor="white" CornerRadius="60" HeightRequest="110" WidthRequest="110" ></Button>
+        <Button x:Name="btn3" Grid.Column="2" Grid.Row="4" Text="3" BackgroundColor="#303030" TextColor="white" CornerRadius="60" HeightRequest="110" WidthRequest="110" ></Button>
+        <Button x:Name="btnAdd" Grid.Column="3" Grid.Row="4" Text="+" BackgroundColor="Orange" TextColor="white" CornerRadius="60" HeightRequest="110" WidthRequest="110"></Button>
+
+        <!--Row 5-->
+        <Button x:Name="btn0" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2" Text="0" BackgroundColor="#303030" TextColor="white" CornerRadius="60" HeightRequest="110" WidthRequest="110" ></Button>
+        <Button x:Name="btnDecimal" Grid.Column="2" Grid.Row="5" Text="." BackgroundColor="#303030" TextColor="white" CornerRadius="60" HeightRequest="110" WidthRequest="110" Clicked="btnDecimal_Clicked"></Button>
+        <Button x:Name="btnEquals" Grid.Column="3" Grid.Row="5" Text="=" BackgroundColor="Orange" TextColor="white" CornerRadius="60" HeightRequest="110" WidthRequest="110" ></Button>
+
+
+
+
+
+    </Grid>
+
+</ContentPage>
